@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>产品信息查询</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px 16px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+        .close-btn {
+            font-size: 24px;
+            color: #999;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 4px 8px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .card-header .bar {
+            width: 4px;
+            height: 18px;
+            background: #1890ff;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+        .card-header span {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+        .info-list {
+            padding: 8px 0;
+        }
+        .info-item {
+            display: flex;
+            padding: 14px 20px;
+            border-bottom: 1px solid #fafafa;
+            line-height: 1.6;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            flex-shrink: 0;
+            width: 90px;
+            color: #999;
+            font-size: 15px;
+        }
+        .info-value {
+            flex: 1;
+            color: #333;
+            font-size: 15px;
+            word-break: break-all;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #bbb;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>查询结果</h2>
+            <button class="close-btn" onclick="window.close()">×</button>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="bar"></div>
+                <span>产品信息</span>
+            </div>
+            <div class="info-list">
+                <div class="info-item">
+                    <span class="info-label">产品名称：</span>
+                    <span class="info-value">剩余电流动作断路器</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">产品系列：</span>
+                    <span class="info-value">NB5LE</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">产品型号：</span>
+                    <span class="info-value">NB5LE-63 2P C16 30mA(R)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">生产日期：</span>
+                    <span class="info-value">2025-07-17 00:00:00</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">溯源码：</span>
+                    <span class="info-value">954585534026700209</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            浙江正泰电器股份有限公司
+        </div>
+    </div>
+</body>
+</html>
